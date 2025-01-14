@@ -33,8 +33,9 @@ jobs:
           git merge upstream/main --allow-unrelated-histories --no-edit
           git push origin main
 
-      - name: Checkout Feature Branch
+      - name: Fetch and Checkout Feature Branch
         run: |
+          git fetch origin vaxxstance:vaxxstance # Create a local copy of vaxxstance
           git checkout vaxxstance
           git merge main --no-edit
           git push origin vaxxstance
