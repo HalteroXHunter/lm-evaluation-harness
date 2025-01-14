@@ -30,12 +30,12 @@ jobs:
 
       - name: Sync with Upstream Main
         run: |
-          git merge upstream/main --allow-unrelated-histories --no-edit
+          git merge upstream/main --allow-unrelated-histories --strategy-option=ours --no-edit
           git push origin main
 
       - name: Fetch and Checkout Feature Branch
         run: |
           git fetch origin vaxxstance:vaxxstance # Create a local copy of vaxxstance
           git checkout vaxxstance
-          git merge main --no-edit
+          git merge main --strategy-option=ours --no-edit
           git push origin vaxxstance
