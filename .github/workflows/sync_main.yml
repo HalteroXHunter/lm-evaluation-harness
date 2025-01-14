@@ -30,7 +30,7 @@ jobs:
 
       - name: Sync with Upstream Main
         run: |
-          git merge upstream/main --no-edit
+          git merge upstream/main --allow-unrelated-histories --no-edit
           git push origin main
 
       - name: Checkout Feature Branch
