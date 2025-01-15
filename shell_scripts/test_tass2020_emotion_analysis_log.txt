@@ -1,0 +1,31 @@
+/data/research/sharedData/conda_envs/iborrego-lmeval-newnewtask/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `PYTORCH_PRETRAINED_BERT_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/data/research/sharedData/conda_envs/iborrego-lmeval-newnewtask/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `PYTORCH_TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/data/research/sharedData/conda_envs/iborrego-lmeval-newnewtask/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-01-15:12:46:50,803 INFO     [__main__.py:279] Verbosity set to INFO
+2025-01-15:12:47:11,937 WARNING  [__main__.py:312]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2025-01-15:12:47:11,938 INFO     [__main__.py:364] Passed `--trust_remote_code`, setting environment variable `HF_DATASETS_TRUST_REMOTE_CODE=true`
+2025-01-15:12:47:11,946 INFO     [__main__.py:376] Selected Tasks: ['tass2020_emotion_analysis']
+2025-01-15:12:47:11,957 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2025-01-15:12:47:11,972 INFO     [evaluator.py:201] Initializing hf model, with arguments: {'pretrained': 'EleutherAI/pythia-2.8b', 'trust_remote_code': True, 'parallelize': True, 'max_length': 2048}
+2025-01-15:12:47:13,392 INFO     [huggingface.py:356] Model parallel was set to True, setting max memory per GPU to {0: 40833384448, 1: 50759598080} and device map to auto
+The `GPTNeoXSdpaAttention` class is deprecated in favor of simply modifying the `config._attn_implementation`attribute of the `GPTNeoXAttention` class! It will be removed in v4.48
+2025-01-15:12:47:17,843 WARNING  [task.py:812] [Task: tass2020_emotion_analysis] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2025-01-15:12:47:17,843 WARNING  [task.py:812] [Task: tass2020_emotion_analysis] metric f1 is defined, but higher_is_better is not. using default higher_is_better=True
+2025-01-15:12:47:21,312 INFO     [task.py:415] Building contexts for tass2020_emotion_analysis on rank 0...
+  0%|          | 0/857 [00:00<?, ?it/s]  9%|▉         | 78/857 [00:00<00:01, 774.56it/s] 18%|█▊        | 156/857 [00:00<00:00, 762.51it/s] 28%|██▊       | 236/857 [00:00<00:00, 778.78it/s] 37%|███▋      | 315/857 [00:00<00:00, 782.88it/s] 46%|████▌     | 395/857 [00:00<00:00, 788.02it/s] 55%|█████▌    | 475/857 [00:00<00:00, 790.93it/s] 65%|██████▍   | 555/857 [00:00<00:00, 787.98it/s] 74%|███████▍  | 635/857 [00:00<00:00, 789.16it/s] 84%|████████▎ | 716/857 [00:00<00:00, 792.87it/s] 93%|█████████▎| 797/857 [00:01<00:00, 797.51it/s]100%|██████████| 857/857 [00:01<00:00, 790.51it/s]
+2025-01-15:12:47:22,450 INFO     [evaluator.py:496] Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/5999 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/5999 [00:14<23:30:41, 14.11s/it]Running loglikelihood requests:   6%|▌         | 341/5999 [00:14<02:45, 34.14it/s] Running loglikelihood requests:  11%|█▏        | 681/5999 [00:14<01:09, 76.44it/s]Running loglikelihood requests:  15%|█▍        | 897/5999 [00:15<00:47, 106.92it/s]Running loglikelihood requests:  21%|██        | 1248/5999 [00:15<00:25, 188.62it/s]Running loglikelihood requests:  24%|██▍       | 1456/5999 [00:15<00:20, 224.31it/s]Running loglikelihood requests:  30%|██▉       | 1793/5999 [00:16<00:13, 307.00it/s]Running loglikelihood requests:  35%|███▌      | 2128/5999 [00:16<00:08, 453.40it/s]Running loglikelihood requests:  39%|███▊      | 2321/5999 [00:16<00:08, 459.19it/s]Running loglikelihood requests:  44%|████▍     | 2665/5999 [00:16<00:04, 672.05it/s]Running loglikelihood requests:  48%|████▊     | 2873/5999 [00:17<00:04, 631.48it/s]Running loglikelihood requests:  52%|█████▏    | 3137/5999 [00:17<00:04, 649.71it/s]Running loglikelihood requests:  58%|█████▊    | 3485/5999 [00:17<00:02, 922.32it/s]Running loglikelihood requests:  61%|██████▏   | 3683/5999 [00:18<00:02, 800.73it/s]Running loglikelihood requests:  67%|██████▋   | 4031/5999 [00:18<00:01, 1112.61it/s]Running loglikelihood requests:  71%|███████   | 4245/5999 [00:18<00:01, 938.13it/s] Running loglikelihood requests:  75%|███████▍  | 4481/5999 [00:18<00:01, 862.70it/s]Running loglikelihood requests:  81%|████████  | 4853/5999 [00:19<00:00, 1222.96it/s]Running loglikelihood requests:  84%|████████▍ | 5062/5999 [00:19<00:00, 1046.28it/s]Running loglikelihood requests:  90%|████████▉ | 5377/5999 [00:19<00:00, 1032.22it/s]Running loglikelihood requests:  96%|█████████▌| 5734/5999 [00:19<00:00, 1377.19it/s]Running loglikelihood requests:  99%|█████████▉| 5945/5999 [00:19<00:00, 1392.37it/s]Running loglikelihood requests: 100%|██████████| 5999/5999 [00:19<00:00, 301.45it/s] 
+2025-01-15:12:47:53,073 INFO     [evaluation_tracker.py:269] Output path not provided, skipping saving results aggregated
+Passed argument batch_size = auto:16.0. Detecting largest batch size
+Determined largest batch size: 64
+Passed argument batch_size = auto:16.0. Detecting largest batch size
+Determined largest batch size: 64
+hf (pretrained=EleutherAI/pythia-2.8b,trust_remote_code=True,parallelize=True,max_length=2048,trust_remote_code=True), gen_kwargs: (None), limit: 1000.0, num_fewshot: None, batch_size: auto:16 (64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64)
+|          Tasks          |Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|-------------------------|------:|------|-----:|------|---|-----:|---|------|
+|tass2020_emotion_analysis|      1|none  |     0|acc   |↑  |0.3372|±  |0.0162|
+|                         |       |none  |     0|f1    |↑  |0.2932|±  |   N/A|
+
